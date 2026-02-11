@@ -193,47 +193,71 @@ python showcase.py      # Visual feature showcase
 
 ---
 
-## 🚧 Hackathon Roadmap (40%)
+## 🚧 Remaining Tasks (40%)
 
-These features will be completed during the **24-hour hackathon**:
+These features will be completed during the hackathon:
 
-### 🔴 High Priority (Must Have)
+### 1. Real Algorand Testnet Integration
+Replace the blockchain simulator with actual Algorand SDK to create real on-chain transactions.
+- Connect to Algorand Testnet using `py-algorand-sdk`
+- Implement real transaction signing and submission
+- Store actual transaction IDs and block numbers
+- Enable verification via Algorand block explorer
 
-| Task | Time Est. | Description |
-|------|-----------|-------------|
-| **Real Algorand Testnet** | 4 hrs | Replace simulator with actual Algorand SDK, connect to testnet |
-| **Web Frontend** | 6 hrs | React/Next.js UI for web-based submissions |
-| **Database Persistence** | 2 hrs | PostgreSQL/SQLite for persistent storage |
-| **User Authentication** | 3 hrs | Web3 wallet connection (Pera, MyAlgo) |
+### 2. Web Frontend Application
+Build a modern web interface for non-technical users.
+- React/Next.js based single-page application
+- Project submission form with drag-and-drop file upload
+- Dashboard to view submitted projects and ownership proofs
+- Certificate download and social sharing buttons
 
-### 🟡 Medium Priority (Should Have)
+### 3. Database Persistence
+Add persistent storage for submissions and user data.
+- PostgreSQL or SQLite database integration
+- Store submission history, user profiles, and analytics
+- Enable search and filtering of past submissions
+- Backup and recovery mechanisms
 
-| Task | Time Est. | Description |
-|------|-----------|-------------|
-| **Production Deployment** | 2 hrs | Deploy API to Vercel/Railway/Heroku |
-| **Real Email Notifications** | 1 hr | SendGrid/Mailgun integration |
-| **Error Handling** | 2 hrs | Comprehensive error handling & validation |
-| **Unit Tests** | 2 hrs | pytest test suite for core functionality |
+### 4. User Authentication
+Implement secure user authentication with Web3 wallet support.
+- Pera Wallet and MyAlgo wallet connection
+- Sign-in with Algorand address
+- Session management and JWT tokens
+- Role-based access control
 
-### 🟢 Nice to Have (If Time Permits)
+### 5. Production Deployment
+Deploy the application for public access.
+- API deployment to Vercel/Railway/Heroku
+- Frontend hosting with CDN
+- Environment configuration and secrets management
+- SSL certificates and domain setup
 
-| Task | Time Est. | Description |
-|------|-----------|-------------|
-| **Mobile Responsive UI** | 2 hrs | Tailwind CSS responsive design |
-| **Demo Video** | 1 hr | 2-minute pitch video |
-| **Pitch Deck** | 1 hr | 10-slide presentation |
-| **Real NFT Images** | 2 hrs | DALL-E/Stable Diffusion generated art |
+### 6. Real Email Notifications
+Replace notification stubs with actual email delivery.
+- SendGrid or Mailgun integration
+- Email templates for submission confirmations
+- Ownership verification alerts
+- Dispute notification emails
 
-### Hackathon Timeline:
-```
-Hour 0-4:   🔧 Algorand Testnet Integration
-Hour 4-10:  🎨 Web Frontend Development  
-Hour 10-13: 🔐 Authentication & Database
-Hour 13-15: 🚀 Deployment & Testing
-Hour 15-18: 🧪 Bug Fixes & Polish
-Hour 18-22: 📝 Documentation & Demo Prep
-Hour 22-24: 🎬 Demo Video & Pitch
-```
+### 7. Error Handling & Validation
+Implement comprehensive error handling throughout the system.
+- Input validation for all API endpoints
+- Graceful error messages for users
+- Logging and monitoring setup
+- Rate limiting and abuse prevention
+
+### 8. Unit Tests
+Create a test suite for core functionality.
+- pytest test cases for all modules
+- Mock blockchain and AI services for testing
+- CI/CD pipeline integration
+- Code coverage reporting
+
+### 9. Demo Video & Pitch Deck
+Prepare presentation materials for hackathon judging.
+- 2-minute demo video showcasing key features
+- 10-slide pitch deck with problem, solution, and tech stack
+- Live demo script and talking points
 
 ---
 
