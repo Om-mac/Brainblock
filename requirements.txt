@@ -1,0 +1,13 @@
+# BrainBlock Dependencies
+
+# Core (no external dependencies for demo)
+# The demo uses only Python standard library
+
+# For Production Deployment:
+# py-algorand-sdk>=2.0.0    # Algorand blockchain SDK
+# pyteal>=0.24.0             # Smart contract development
+# transformers>=4.30.0       # NLP/AI models
+# torch>=2.0.0               # Deep learning backend
+# spacy>=3.5.0               # Text processing
+# requests>=2.28.0           # API calls
+# python-dotenv>=1.0.0       # Environment variables
